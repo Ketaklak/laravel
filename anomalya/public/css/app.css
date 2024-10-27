@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------------------
+   Global Styles
+-------------------------------------------------------- */
+body {
+    background-image: url('/img/bg.jpg'); /* Image d'arrière-plan */
+    background-size: cover;
+    color: #fff; /* Couleur de texte */
+    font-family: 'Cinzel', serif; /* Police médiévale */
+}
+
+/* --------------------------------------------------------
+   Button Styles
+-------------------------------------------------------- */
+.btn-primary {
+    background-color: maroon; /* Couleur de fond des boutons */
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition pour l'ombre */
+    padding: 10px 20px; /* Ajout de padding pour un meilleur look */
+    font-size: 1.1em; /* Taille du texte du bouton */
+    border-radius: 5px; /* Arrondir les coins */
+}
+
+.btn-primary:hover {
+    background-color: darkred; /* Couleur au survol */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5); /* Ombre au survol */
+}
+
+/* --------------------------------------------------------
+   Input Styles
+-------------------------------------------------------- */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid gold; /* Couleur de la bordure */
+    padding: 10px;
+    margin-bottom: 15px; /* Espacement entre les champs */
+    transition: border-color 0.3s; /* Transition pour la couleur de bordure */
+}
+
+.form-control:focus {
+    border-color: darkred; /* Couleur de la bordure au focus */
+    outline: none; /* Retire le contour par défaut */
+}
+
+/* --------------------------------------------------------
+   Label Styles
+-------------------------------------------------------- */
+label {
+    color: gold; /* Couleur dorée pour les labels */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacement entre le label et le champ */
+    display: block; /* S'assurer que les labels prennent toute la largeur */
+}
+
+/* --------------------------------------------------------
+   Animation
+-------------------------------------------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --------------------------------------------------------
+   Navigation Styles
+-------------------------------------------------------- */
+.nav-link {
+    color: gold; /* Couleur dorée pour les liens */
+    padding: 10px 15px; /* Espacement autour des liens */
+}
+
+.nav-link:hover {
+    color: darkred; /* Couleur au survol */
+}
+
+/* --------------------------------------------------------
+   Resource Box Styles
+-------------------------------------------------------- */
+.resource-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour la box de ressources */
+    padding: 10px; /* Espacement interne */
+    border-radius: 10px; /* Arrondi des coins */
+    margin: 0 auto; /* Centrer horizontalement */
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Ombre pour la box */
+    display: flex; /* Utiliser flexbox pour aligner les éléments */
+    align-items: center; /* Aligner verticalement */
+}
+
+/* --------------------------------------------------------
+   Welcome Page Styles
+-------------------------------------------------------- */
+.welcome-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour le container */
+    padding: 40px; /* Espacement interne */
+    border-radius: 10px; /* Arrondi des coins */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* Ombre pour le container */
+    margin: 50px auto; /* Marge supérieure et inférieure pour le centrer */
+    max-width: 600px; /* Largeur maximale */
+    animation: fadeIn 0.5s; /* Animation d'apparition */
+}
+
+/* --------------------------------------------------------
+   News Section Styles
+-------------------------------------------------------- */
+.news-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour le container des news */
+    padding: 30px; /* Espacement interne */
+    border-radius: 10px; /* Arrondi des coins */
+    margin: 50px auto; /* Marge supérieure et inférieure pour le centrer */
+    max-width: 800px; /* Largeur maximale pour les news */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* Ombre pour le container */
+    animation: fadeIn 0.5s; /* Animation d'apparition */
+}
+
+.news-item {
+    margin-bottom: 20px; /* Espacement entre les articles de news */
+}
+
+.news-item h3 {
+    color: gold; /* Couleur dorée pour les titres des nouvelles */
+    margin-bottom: 10px; /* Espacement sous le titre de la news */
+}
+
+.news-item p {
+    color: #fff; /* Couleur blanche pour le contenu de la news */
+}
+
+/* --------------------------------------------------------
+   Dashboard Styles
+-------------------------------------------------------- */
+.dashboard-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le container */
+    padding: 40px; /* Espacement interne */
+    border-radius: 10px; /* Arrondi des coins */
+    margin: 50px auto; /* Marge pour centrer le container */
+    max-width: 800px; /* Largeur maximale */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Ombre pour le container */
+    animation: fadeIn 0.5s; /* Animation d'apparition */
+}
+
+.dashboard-title {
+    color: gold; /* Couleur dorée pour le titre */
+    text-align: center; /* Centrer le texte */
+    font-size: 2.5em; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.welcome-message {
+    color: white; /* Couleur du message de bienvenue */
+    font-size: 1.2em; /* Taille du texte du message */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px; /* Espacement sous le message */
+}
+
+/* --------------------------------------------------------
+   News Form Styles
+-------------------------------------------------------- */
+.news-form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent, légèrement plus sombre */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 600px; /* Largeur maximale pour le formulaire */
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée */
+    animation: fadeIn 0.5s; /* Animation d'apparition */
+}
+
+/* --------------------------------------------------------
+   Login and Registration Styles
+-------------------------------------------------------- */
+.login-container,
+.registration-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent, légèrement plus sombre */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée */
+    animation: fadeIn 0.5s; /* Animation d'apparition */
+}
